@@ -17,10 +17,10 @@
 
         <ul class="controls">
             <li class="buttons active" data-filter="all">All</li>
-            <li class="buttons" data-filter="all">Landscapes</li>
-            <li class="buttons" data-filter="all">Places</li>
-            <li class="buttons" data-filter="all">Events</li>
-            <li class="buttons" data-filter="all">Kuma</li>
+            <li class="buttons" data-filter="Landscapes">Landscapes</li>
+            <li class="buttons" data-filter="Places">Places</li>
+            <li class="buttons" data-filter="Events">Events</li>
+            <li class="buttons" data-filter="Kuma">Kuma</li>
         </ul>
 
         <div class="image-container">
@@ -99,7 +99,36 @@
 
     </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
+<script>
+    $(document).ready(function(){
+
+        $('.buttons').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+
+            var filter = $(this).attr('data-filter')
+
+            if(filter == 'all'){
+                $('.image').show(400);
+            }else{
+                $('.image').not('.'+filter).hide(200);
+                $('.image').filter('.'+filter).show(400);
+            }
+        });
+
+        $('.gallery').magnificPopup({
+
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
+        })
+
+    });
+</script>
 
 </body>
 
