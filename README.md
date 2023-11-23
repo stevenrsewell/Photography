@@ -1,5 +1,5 @@
 # Photography
- A photography portfolio website featuring images captured by me. The user can view images by category, or all on one page.
+ A photography portfolio website featuring images captured by me.
 
 ## Live Link
 [photography.stevensewell.com](https://www.photography.stevensewell.com)
@@ -8,4 +8,3 @@
 + HTML / CSS
 + Javascript
 + [Material Design Bootstrap](https://mdbootstrap.com/)
-+ [Magnific Popup](https://dimsemenov.com/plugins/magnific-popup/)
