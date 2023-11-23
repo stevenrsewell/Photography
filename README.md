@@ -1,10 +1,13 @@
 # Photography
- A photography portfolio website featuring images captured by me.
+A photography portfolio website featuring images all captured by me.
 
-## Live Link
+## Live Web Address
 [photography.stevensewell.com](https://www.photography.stevensewell.com)
 
 ## Technologies Used
 + HTML / CSS
 + Javascript
++ [Bootstrap](https://getbootstrap.com/)
 + [Material Design Bootstrap](https://mdbootstrap.com/)
++ [Animate On Scroll (AOS)](https://michalsnik.github.io/aos/)
++ [gLightbox](https://biati-digital.github.io/glightbox/)
