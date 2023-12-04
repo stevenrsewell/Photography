@@ -27,91 +27,396 @@
   <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
   <!-- Animate On Scroll (AOS) -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
 </head>
 
 <body>
-
   <header>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
+
+        <a class="navbar-brand d-flex align-items-center" href="#">Photography</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="landscapes.html">Landscapes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="architecture.html">Architecture</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kuma.html">Kuma</a>
-            </li>
-          </ul>
+
+          <div class="nav-links">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="landscapes.html">Landscapes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="architecture.html">Architecture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aerial.html">Aerial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kuma.html">Kuma</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="social-links d-flex align-items-center d-none d-md-block">
+          <div class="social-icons">
+            <a href="#" class="facebook"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#" class="instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="linkedin"><i class='bx bxl-linkedin-square'></i></a>
+          </div>
         </div>
       </div>
     </nav>
-    <!-- End Nav Bar -->
+    <!-- End Nav -->
 
     <!-- Background image -->
     <div class="p-5 text-center bg-image" style="
             background-image: url('images/header.jpg');
-            height: 400px;
-          ">
+            height: 400px;">
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
         <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3">Crowned One Photography</h1>
-            <h4 class="mb-3">Photography by Steven Sewell</h4>
-          </div>
         </div>
       </div>
     </div>
     <!-- End Background image -->
   </header>
 
-  <main style="padding-top: 50px; padding-bottom: 25px;">
-
-    <div class="container">
-      <div class="row" data-aos="fade-up" data-aos-once="true">
-        <div class="col-lg-4 col-md-6">
-          <div class="card bg-dark text-white">
-            <img class="card-img-top" src="images/Landscapes/landscapes3.jpg" alt="Card image cap"
-              style="height: 200px;">
-            <div class="card-body">
-              <h5 class="card-title">Landscapes</h5>
-              <p class="card-text">Scenic portraits of earth's natural beauty</p>
+  <main>
+    <!-- About -->
+    <section id="about" class="about section-dark-bg py-5" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+      <div class="container">
+        <div class="heading-container text-center">
+          <h2>About</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="content">
+              <h3>Photography by Steven Sewell</h3>
+              <p>
+                Crowned One Photography is a recreational photography brand showcasing images that I've taken
+                throughout my life. Exploring different cities and capturing their buildings, scenery, nightlife, and
+                culture is a form of creative expression that's broadened my view of the world.
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+                  <i class="bx bx-camera"></i>
+                  <h4>Photography</h4>
+                  <p>All images are taken by me</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true">
+                  <i class="bx bx-bolt-circle"></i>
+                  <h4>Digital Editing</h4>
+                  <p>Lighting, Color, Filters</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300" data-aos-once="true">
+                  <i class="bx bxs-plane-take-off"></i>
+                  <h4>Traveling</h4>
+                  <p>Experiencing the world</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
+                  <i class="bx bx-images"></i>
+                  <h4>Portfolio</h4>
+                  <p>Showcasing where I've been</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card bg-dark text-white">
-            <img class="card-img-top" src="images/Structural/structural2.jpg" alt="Card image cap"
-              style="height: 200px;">
-            <div class="card-body">
-              <h5 class="card-title">Buildings</h5>
-              <p class="card-text">Architecture from around the country</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card bg-dark text-white">
-            <img class="card-img-top" src="images/Events/events2.jpg" alt="Card image cap" style="height: 200px;">
-            <div class="card-body">
-              <h5 class="card-title">Lifestyle</h5>
-              <p class="card-text">Animals, Sporting Events, Hockey Games</p>
-            </div>
+          <div class="col-lg-5 d-flex align-items-stretch justify-content-center justify-content-lg-end">
+            <img src="images/profile-image.jpg" class="img-fluid">
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Products -->
+    <section id="products" class="products section-light-bg">
+      <div class="container">
+        <div class="row">
+          <h5 style="color: grey;">Products I Use</h5>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/Companies/samsung.png" alt="" data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/Companies/adobe.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200"
+              data-aos-once="true">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/Companies/hp.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300"
+              data-aos-once="true">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/Companies/microsoft.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400"
+              data-aos-once="true">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/Companies/apple.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500"
+              data-aos-once="true">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="images/Companies/canon.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="600"
+              data-aos-once="true">
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Procucts -->
+
+    <!-- Cards -->
+    <section id="cards" class="cards section-dark-bg py-6">
+      <div class="container">
+        <div class="heading-container text-center">
+          <h2>Categories</h2>
+        </div>
+        <div class="row gx-4 gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-dark text-white" data-aos="fade-in" data-aos-delay="50" data-aos-once="true">
+              <img class="card-img-top img-fluid" src="images/Landscapes/landscapes3.jpg" alt="Card image cap"
+                loading="lazy" style="height: 200px;">
+              <div class="card-header">
+                <h5>Landscapes</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Scenic portraits of earth's natural beauty</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-dark text-white" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+              <img class="card-img-top img-fluid" src="images/Structural/structural2.jpg" alt="Card image cap"
+                loading="lazy" style="height: 200px;">
+              <div class="card-header">
+                <h5>Buildings</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Architecture from around the country</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-dark text-white" data-aos="fade-in" data-aos-delay="150" data-aos-once="true">
+              <img class="card-img-top img-fluid" src="images/Cards/landmarks.jpg" alt="Card image cap" loading="lazy"
+                style="height: 200px;">
+              <div class="card-header">
+                <h5>Landmarks</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Historical and Cultural Monuments</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 offset-lg-2">
+            <div class="card bg-dark text-white" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
+              <img class="card-img-top img-fluid" src="images/Cards/aerial.jpg" alt="Card image cap" loading="lazy"
+                style="height: 200px;">
+              <div class="card-header">
+                <h5>Aerial</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Bird's-Eye Views</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card bg-dark text-white" data-aos="fade-in" data-aos-delay="250" data-aos-once="true">
+              <img class="card-img-top img-fluid" src="images/Cards/lifestyle.jpg" alt="Card image cap" loading="lazy"
+                style="height: 200px;">
+              <div class="card-header">
+                <h5>Lifestyle</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Events, Sports, Animals, Portraits</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Cards -->
+
+    <!-- CTA -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+          </div>
+
+        </div>
+    </section>
+    <!-- End CTA -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-dark-bg py-5">
+      <div class="container">
+        <div class="heading-container text-center">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery -->
+
+    <!-- Counts -->
+    <section id="counts" class="counts section-light-bg">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class='bx bxs-calendar'></i>
+              <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="2"
+                class="purecounter"></span>
+              <p>Years of Photography</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class='bx bx-world'></i>
+              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="2"
+                class="purecounter"></span>
+              <p>States I've Traveled To</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class='bx bxs-photo-album'></i>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="2"
+                class="purecounter"></span>
+              <p>Images in my Portfolio</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class='bx bxs-keyboard'></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2"
+                class="purecounter"></span>
+              <p>Years of Graphic Design</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Counts -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-dark-bg py-5">
+      <div class="container">
+        <div class="heading-container text-center">
+          <h2>Contact</h2>
+        </div>
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class='bx bx-map'></i>
+              <h3>Location</h3>
+              <address>New York City Metropolitan Area</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-ig">
+              <i class='bx bxl-instagram'></i>
+              <h3>Instagram</h3>
+              <p><a href="#">@CrownedOnePhotography</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class='bx bx-envelope'></i>
+              <h3>Email</h3>
+              <p><a href="mailto:stevenrsewell@icloud.com">stevenrsewell@icloud.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.35377319847!2d-74.05163288610355!3d40.75903219676535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1701577017768!5m2!1sen!2sus"
+            width="100%" height="350px" style="border:0;" loading="lazy"></iframe>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer id="footer">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Photography</h3>
+              <p>
+                <br>
+                <strong>Location:</strong> NYC Metropolitan Area<br>
+                <strong>Email:</strong> stevenrsewell@icloud.com<br><br>
+                &copy; Copyright Steven Sewell
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Home</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#cards">Categories</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#portfolio">Gallery</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Portfolio</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="landscapes.html">Landscapes</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="architecture.html">Architecture</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="aerial.html">Aerial</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="kuma.html">Kuma</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Connect on Social</h4>
+              <div class="social-links mt-3">
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="http://linkedin.com/in/stevenrsewell" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
   </main>
 
@@ -121,16 +426,44 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- gLightbox -->
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Isotope Layout -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!-- Pure Counter -->
+  <script src="dist/purecounter_vanilla.js"></script>
 
+  <!-- Initialize GLightbox -->
   <script>
     const lightbox = GLightbox({
       selector: '.glightbox'
     });
   </script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Initialize AOS -->
   <script>
     AOS.init();
+  </script>
+  <!-- Initialize Pure Counter -->
+  <script>
+    new PureCounter();
+  </script>
+  <!-- Initialize Isotope Layout -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var grid = document.querySelector('.portfolio-container');
+      var iso = new Isotope(grid, {
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+      });
+
+      var filterButtons = document.querySelectorAll('#portfolio-flters li');
+      filterButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          var filterValue = this.getAttribute('data-filter');
+          iso.arrange({ filter: filterValue });
+        });
+      });
+    });
   </script>
 
 </body>
