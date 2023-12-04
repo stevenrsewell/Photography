@@ -1,5 +1,5 @@
 # Photography
-A photography portfolio website featuring images all captured by me.
+A photography portfolio website featuring images all captured and edited by me.
 
 ## Live Web Address
 [photography.stevensewell.com](https://www.photography.stevensewell.com)
