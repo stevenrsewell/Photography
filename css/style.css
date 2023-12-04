@@ -57,6 +57,7 @@ main {
 
 h2 {
   text-align: center;
+  font-weight: bold;
   position: relative;
   display: inline-block;
   padding: 0 10px;
@@ -276,6 +277,7 @@ section {
 .contact-ig,
 .contact-email {
   padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 /* Footer */
