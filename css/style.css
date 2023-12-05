@@ -96,7 +96,8 @@ section {
 }
 
 .about .content {
-  padding-right: 30px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 .about .content h3 {
@@ -215,7 +216,7 @@ section {
 .cta {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cta-bg.jpg") fixed center center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 @media (max-width: 1024px) {
@@ -360,52 +361,9 @@ section {
   opacity: 1;
 }
 
-/* Contact */
-#contact {
-  padding: 40px 0;
-  color: #ffffff;
-}
-
-#contact .contact-info {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #1058b0;
-}
-
-#contact .contact-info address,
-#contact .contact-info p {
-  margin-bottom: 0;
-  color: #ffffff;
-}
-
-#contact .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-#contact .contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-#contact .contact-info a:hover {
-  color: #22c6f8;
-}
-
-.contact-address,
-.contact-ig,
-.contact-email {
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+/* Travel Map */
+.map iframe {
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.5); /* Adjust the values as needed */
 }
 
 /* Footer */
