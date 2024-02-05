@@ -11,3 +11,4 @@ A photography portfolio website featuring images all captured and edited by me.
 + [Material Design Bootstrap](https://mdbootstrap.com/)
 + [Animate On Scroll (AOS)](https://michalsnik.github.io/aos/)
 + [gLightbox](https://biati-digital.github.io/glightbox/)
++ [Google My Maps](https://www.google.com/maps/about/mymaps/)
